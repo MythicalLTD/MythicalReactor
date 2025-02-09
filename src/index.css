@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #00ff00;
+  --color-secondary: #ff9800;
+  --color-error: #ff4757;
+  --color-text: #e0e0e0;
+}
+
+body {
+  background-color: #0c1016;
+  color: var(--color-text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Card styles */
+.card {
+  background: linear-gradient(to bottom right, #0f1319, #0a0d12);
+  border: 1px solid #1a2233;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+}
+
+.glow-error {
+  box-shadow: 0 0 15px rgba(255, 71, 87, 0.2);
+}
+
+.glow-warning {
+  box-shadow: 0 0 15px rgba(255, 152, 0, 0.2);
+}
+
+/* Grid background */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(26, 34, 51, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 34, 51, 0.3) 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: center center;
+}
+
+/* Transitions */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Smooth transitions */
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Card hover effects */
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+/* Add some glow effects */
+.glow {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+}
+
+.glow-error {
+  box-shadow: 0 0 15px rgba(255, 71, 87, 0.2);
+}
+
+.glow-warning {
+  box-shadow: 0 0 15px rgba(255, 152, 0, 0.2);
+}
+
+/* Add grid lines */
+.grid-bg {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+

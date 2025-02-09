@@ -1,0 +1,39 @@
+{
+  "name": "nuclear-reactor-dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^7.48.3",
+    "@babylonjs/gui": "^7.48.3",
+    "@babylonjs/loaders": "^7.48.3",
+    "@mdi/font": "^7.4.47",
+    "@tailwindcss/vite": "^4.0.5",
+    "@types/three": "^0.173.0",
+    "@vueuse/core": "^12.5.0",
+    "@vueuse/math": "^12.5.0",
+    "canvas": "^3.1.0",
+    "chart.js": "^4.4.7",
+    "gsap": "^3.12.7",
+    "lucide-vue-next": "^0.475.0",
+    "pinia": "^2.3.1",
+    "recharts": "^2.15.1",
+    "three": "^0.173.0",
+    "vue": "^3.5.13",
+    "vue-chartjs": "^5.3.2",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.5",
+    "vite": "^6.1.0"
+  }
+}
